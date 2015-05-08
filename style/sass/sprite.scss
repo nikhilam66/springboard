@@ -1,0 +1,12 @@
+/**************************************************
+Sprite Styles
+***************************************************/
+
+@import "compass/utilities/sprites";
+
+$images-layout:smart;
+$images-sprite-dimensions: true;
+$images-use-percentages: true;
+
+@import "images/*.png";
+@include all-images-sprites;

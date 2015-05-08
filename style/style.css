@@ -1,0 +1,372 @@
+/**************************************************
+Font Styles
+***************************************************/
+@font-face {
+  font-family: 'Hanzipen Bold';
+  src: url("fonts/HanziPenSC-W5.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'FiraSans Light';
+  src: url("fonts/FiraSans-Light-2.ttf") format("truetype");
+}
+/* line 14, sass/font.scss */
+body {
+  font-family: 'FiraSans Light', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* line 21, sass/font.scss */
+h1 {
+  font-family: 'Hanzipen Bold', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 2.5em;
+  color: #f15a24;
+}
+
+/* line 27, sass/font.scss */
+h2 {
+  font-size: 1.9em;
+}
+
+/* line 31, sass/font.scss */
+footer {
+  font-family: 'Hanzipen Bold', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 75px;
+  word-wrap: break-word;
+}
+/* line 36, sass/font.scss */
+footer a {
+  display: block;
+  width: 100%;
+  color: #ffee71;
+}
+/* line 40, sass/font.scss */
+footer a:hover {
+  color: #ffee71;
+}
+
+/**************************************************
+Background Styles
+***************************************************/
+/* line 4, sass/misc.scss */
+body {
+  height: 100%;
+  background-color: #fdf479;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 11, sass/misc.scss */
+footer {
+  background: url("images/backgrounds/button-inactive.png") 50% 50% no-repeat;
+  background-size: contain;
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 80px;
+}
+/* line 22, sass/misc.scss */
+footer:hover {
+  background: url("images/backgrounds/button-active.png") 50% 50% no-repeat;
+  background-size: contain;
+}
+
+/* line 28, sass/misc.scss */
+.menu-container {
+  height: 32px;
+  width: 32px;
+  font-family: 'Hanzipen Bold', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+/* line 36, sass/misc.scss */
+.menu-container.close {
+  background: url("images/images/menu-open.png") no-repeat;
+  background-size: contain;
+}
+/* line 39, sass/misc.scss */
+.menu-container.close .menu {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+/* line 45, sass/misc.scss */
+.menu-container.open {
+  background: url("images/images/menu-close.png") no-repeat;
+  background-size: contain;
+}
+/* line 48, sass/misc.scss */
+.menu-container.open .menu {
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+  height: 400px;
+}
+/* line 57, sass/misc.scss */
+.menu-container .menu {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  background: url("images/backgrounds/menu-background.png") no-repeat;
+  background-size: 100%;
+  height: 400px;
+  width: 300px;
+  font-size: 0.9em;
+}
+/* line 66, sass/misc.scss */
+.menu-container .menu li {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding: 5px 0 5px 10px;
+  word-wrap: break-word;
+  text-align: center;
+  border-image: url("images/images/menu-border.png") 0 0 100% 0 repeat;
+  border-width: 0 0 20px 0;
+}
+/* line 75, sass/misc.scss */
+.menu-container .menu li:first-child {
+  margin-top: 35px;
+}
+/* line 78, sass/misc.scss */
+.menu-container .menu li:last-child {
+  border: none;
+}
+/* line 81, sass/misc.scss */
+.menu-container .menu li a {
+  color: #333;
+}
+/* line 84, sass/misc.scss */
+.menu-container .menu li a:hover {
+  color: #f15a24;
+}
+
+/**************************************************
+Misc Styles
+***************************************************/
+/* line 95, sass/misc.scss */
+ul {
+  list-style: none;
+  margin: 0 5%;
+}
+/* line 99, sass/misc.scss */
+ul li {
+  display: inline-block;
+}
+
+/* line 104, sass/misc.scss */
+a {
+  text-decoration: none;
+}
+
+/**************************************************
+Parallex Styles
+***************************************************/
+/* line 112, sass/misc.scss */
+.main {
+  height: 100vh;
+  width: 100vw;
+  -webkit-perspective: 1px;
+  -moz-perspective: 1px;
+  -ms-perspective: 1px;
+  perspective: 1px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* line 123, sass/misc.scss */
+.row {
+  background: url("images/backgrounds/logo.png") no-repeat;
+  background-size: 15%;
+  position: relative;
+  height: 97vh;
+  padding: 0 0 3vh 0;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 1s ease 1s;
+  -moz-transition: -moz-transform 1s ease 1s;
+  -ms-transition: -ms-transform 1s ease 1s;
+  transition: transform 1s ease 1s;
+  -webkit-perspective-origin-x: 100%;
+  -moz-perspective-origin-x: 100%;
+  -ms-perspective-origin-x: 100%;
+  perspective-origin-x: 100%;
+}
+/* line 142, sass/misc.scss */
+.row .column {
+  height: 75vh;
+  position: absolute;
+  top: 25vh;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-perspective-origin-x: 100%;
+  -moz-perspective-origin-x: 100%;
+  -ms-perspective-origin-x: 100%;
+  perspective-origin-x: 100%;
+}
+/* line 154, sass/misc.scss */
+.row .column .image-container > img {
+  width: 50vh;
+  margin: 0 auto;
+}
+/* line 159, sass/misc.scss */
+.row:nth-child(2n+1) {
+  background-color: #fdf479;
+  background-position: top;
+  z-index: 4;
+  transform: translateZ(0);
+}
+/* line 165, sass/misc.scss */
+.row:nth-child(2n) {
+  background-color: #fdf479;
+  background-position: 50% 10px;
+  z-index: 2;
+  transform: translateZ(-1px) scale(2);
+}
+
+/**************************************************
+Home Styles
+***************************************************/
+/* line 5, sass/module.scss */
+#home .text-container {
+  margin: 3% 10%;
+}
+
+/**************************************************
+Pumping Prototype Styles
+***************************************************/
+/* line 15, sass/module.scss */
+#pumping_prototype .column div {
+  width: 45%;
+}
+/* line 18, sass/module.scss */
+#pumping_prototype .column .image-container {
+  padding-right: 4%;
+  float: left;
+}
+/* line 21, sass/module.scss */
+#pumping_prototype .column .image-container img {
+  width: 80%;
+}
+/* line 25, sass/module.scss */
+#pumping_prototype .column .text-container {
+  padding-top: 4%;
+  padding-left: 4%;
+  float: right;
+}
+
+/**************************************************
+Believed Styles
+***************************************************/
+/* line 37, sass/module.scss */
+#believed .logos-row li {
+  width: 10%;
+  margin-left: 7%;
+}
+/* line 40, sass/module.scss */
+#believed .logos-row li img {
+  width: 100%;
+}
+
+/**************************************************
+Team Styles
+***************************************************/
+/* line 50, sass/module.scss */
+#team .team-row {
+  margin-top: 9%;
+}
+/* line 52, sass/module.scss */
+#team .team-row li {
+  width: 10%;
+  margin-left: 10%;
+}
+/* line 55, sass/module.scss */
+#team .team-row li:first-child {
+  margin-left: 0;
+}
+/* line 57, sass/module.scss */
+#team .team-row li:first-child .twit-handle {
+  opacity: 0;
+}
+/* line 61, sass/module.scss */
+#team .team-row li div {
+  width: 100%;
+}
+/* line 63, sass/module.scss */
+#team .team-row li div img, #team .team-row li div p {
+  width: 100%;
+}
+/* line 66, sass/module.scss */
+#team .team-row li div p {
+  margin: 0;
+  padding: 0;
+}
+/* line 70, sass/module.scss */
+#team .team-row li div .twit-handle {
+  font-size: 0.75em;
+}
+
+/**************************************************
+Contact Us Styles
+***************************************************/
+/* line 82, sass/module.scss */
+#contact_us .social-container {
+  margin-top: 5%;
+}
+/* line 84, sass/module.scss */
+#contact_us .social-container a {
+  display: inline-block;
+  width: 10%;
+  margin-left: 2%;
+}
+/* line 88, sass/module.scss */
+#contact_us .social-container a:first-child {
+  margin-left: 0;
+}
+/* line 92, sass/module.scss */
+#contact_us .social-container a img {
+  width: 100%;
+}
+/* line 98, sass/module.scss */
+#contact_us .addresses {
+  margin-top: 5%;
+}
+/* line 100, sass/module.scss */
+#contact_us .addresses div {
+  width: 60%;
+  margin: 0 auto;
+}
+/* line 103, sass/module.scss */
+#contact_us .addresses div.email-container {
+  background: url("images/images/social-address.png") 10% top no-repeat;
+  background-size: 5.5%;
+}
+/* line 106, sass/module.scss */
+#contact_us .addresses div.email-container a {
+  color: #333;
+}
+/* line 108, sass/module.scss */
+#contact_us .addresses div.email-container a:hover {
+  color: #333;
+}
+/* line 113, sass/module.scss */
+#contact_us .addresses div.office-address-container {
+  margin-top: 2%;
+  background: url("images/images/social-map.png") 10% top no-repeat;
+  background-size: 4%;
+}
+/* line 117, sass/module.scss */
+#contact_us .addresses div.office-address-container p {
+  margin: 0;
+}

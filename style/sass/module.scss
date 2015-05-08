@@ -1,0 +1,123 @@
+/**************************************************
+Home Styles
+***************************************************/
+#home {
+	.text-container {
+		margin: 3% 10%;
+	}
+}
+
+/**************************************************
+Pumping Prototype Styles
+***************************************************/
+#pumping_prototype {
+	.column {
+		div {
+			width: 45%;
+		}
+		.image-container {
+			padding-right: 4%;
+			float: left;
+			img {
+				width: 80%
+			}
+		}
+		.text-container {
+			padding-top: 4%;
+			padding-left: 4%;
+			float: right;
+		}
+	}
+}
+
+/**************************************************
+Believed Styles
+***************************************************/
+#believed {
+	.logos-row li {
+		width: 10%;
+		margin-left: 7%;
+		img {
+			width: 100%;
+		}
+	}
+}
+
+/**************************************************
+Team Styles
+***************************************************/
+#team {
+	.team-row {
+		margin-top: 9%;
+		li {
+			width: 10%;
+			margin-left: 10%;
+			&:first-child {
+				margin-left: 0;
+				.twit-handle {
+					opacity: 0;
+				}
+			}
+			div {
+				width: 100%;
+				img, p {
+					width: 100%;
+				}
+				p {
+					margin: 0;
+					padding: 0;
+				}
+				.twit-handle {
+					font-size: 0.75em;
+				}
+			}
+		}
+	}
+}
+
+/**************************************************
+Contact Us Styles
+***************************************************/
+#contact_us {
+	.social-container {
+		margin-top: 5%;
+		a {
+			display: inline-block;
+			width: 10%;
+			margin-left: 2%;
+			&:first-child {
+				margin-left: 0;
+			}
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	.addresses {
+		margin-top: 5%;
+		div {
+			width: 60%;
+			margin: 0 auto;
+			&.email-container {
+				background: url('images/images/social-address.png') 10% top no-repeat;
+				background-size: 5.5%;
+				a {
+					color: #333;
+					&:hover {
+						color: #333;
+					}
+				}
+			}
+			&.office-address-container {
+				margin-top: 2%;
+				background: url('images/images/social-map.png') 10% top no-repeat;
+				background-size: 4%;
+				p {
+					margin: 0;
+				}
+			}
+		}
+	}
+}

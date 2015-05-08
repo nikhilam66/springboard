@@ -1,0 +1,44 @@
+/**************************************************
+Font Styles
+***************************************************/
+@font-face {
+	font-family: 'Hanzipen Bold';
+	src: url('fonts/HanziPenSC-W5.ttf')  format('truetype');
+}
+
+@font-face {
+	font-family: 'FiraSans Light';
+	src: url('fonts/FiraSans-Light-2.ttf')  format('truetype');
+}
+
+body {
+	font-family: 'FiraSans Light', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	color: #333;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Hanzipen Bold', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 2.5em;
+	color: #f15a24;
+}
+
+h2 {
+	font-size: 1.9em;
+}
+
+footer {
+	font-family: 'Hanzipen Bold', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	line-height: 75px;
+	word-wrap: break-word;
+	a {
+		display:block;
+		width: 100%;
+		color: #ffee71;
+		&:hover {
+			color: #ffee71;
+		}
+	}
+}
