@@ -12,7 +12,7 @@ Font Styles
 /* line 14, sass/font.scss */
 body {
   font-family: 'FiraSans Light', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   color: #333;
   text-align: center;
 }
@@ -108,7 +108,7 @@ footer:hover {
   -moz-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
   opacity: 1;
-  height: 400px;
+  height: 450px;
 }
 /* line 57, sass/misc.scss */
 .menu-container .menu {
@@ -117,8 +117,8 @@ footer:hover {
   left: 10px;
   background: url("images/backgrounds/menu-background.png") no-repeat;
   background-size: 100%;
-  height: 400px;
-  width: 300px;
+  height: 450px;
+  width: 335px;
   font-size: 0.9em;
 }
 /* line 66, sass/misc.scss */
@@ -129,40 +129,61 @@ footer:hover {
   padding: 5px 0 5px 10px;
   word-wrap: break-word;
   text-align: center;
+  -webkit-border-image: url("images/images/menu-border.png") 0 0 100% 0 repeat;
+  -moz-border-image: url("images/images/menu-border.png") 0 0 100% 0 repeat;
+  -ms-border-image: url("images/images/menu-border.png") 0 0 100% 0 repeat;
+  -o-border-image: url("images/images/menu-border.png") 0 0 100% 0 repeat;
   border-image: url("images/images/menu-border.png") 0 0 100% 0 repeat;
+  -webkit-border-width: 0 0 20px 0;
+  -moz-border-width: 0 0 20px 0;
+  -ms-border-width: 0 0 20px 0;
+  -o-border-width: 0 0 20px 0;
   border-width: 0 0 20px 0;
+  border-style: solid;
 }
-/* line 75, sass/misc.scss */
+/* line 84, sass/misc.scss */
 .menu-container .menu li:first-child {
   margin-top: 35px;
 }
-/* line 78, sass/misc.scss */
+/* line 87, sass/misc.scss */
 .menu-container .menu li:last-child {
   border: none;
 }
-/* line 81, sass/misc.scss */
+/* line 90, sass/misc.scss */
 .menu-container .menu li a {
   color: #333;
 }
-/* line 84, sass/misc.scss */
+/* line 93, sass/misc.scss */
 .menu-container .menu li a:hover {
   color: #f15a24;
+}
+
+/* line 100, sass/misc.scss */
+.clarice-logo {
+  height: 40px;
+  width: 245px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  background: url("images/images/clarice-logo.png") no-repeat;
+  background-size: contain;
 }
 
 /**************************************************
 Misc Styles
 ***************************************************/
-/* line 95, sass/misc.scss */
+/* line 114, sass/misc.scss */
 ul {
   list-style: none;
   margin: 0 5%;
 }
-/* line 99, sass/misc.scss */
+/* line 118, sass/misc.scss */
 ul li {
   display: inline-block;
 }
 
-/* line 104, sass/misc.scss */
+/* line 123, sass/misc.scss */
 a {
   text-decoration: none;
 }
@@ -170,7 +191,7 @@ a {
 /**************************************************
 Parallex Styles
 ***************************************************/
-/* line 112, sass/misc.scss */
+/* line 131, sass/misc.scss */
 .main {
   height: 100vh;
   width: 100vw;
@@ -182,13 +203,13 @@ Parallex Styles
   overflow-y: auto;
 }
 
-/* line 123, sass/misc.scss */
+/* line 142, sass/misc.scss */
 .row {
   background: url("images/backgrounds/logo.png") no-repeat;
   background-size: 15%;
   position: relative;
-  height: 97vh;
-  padding: 0 0 3vh 0;
+  height: 95vh;
+  padding: 0 0 5vh 0;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
@@ -202,7 +223,7 @@ Parallex Styles
   -ms-perspective-origin-x: 100%;
   perspective-origin-x: 100%;
 }
-/* line 142, sass/misc.scss */
+/* line 161, sass/misc.scss */
 .row .column {
   height: 75vh;
   position: absolute;
@@ -215,19 +236,19 @@ Parallex Styles
   -ms-perspective-origin-x: 100%;
   perspective-origin-x: 100%;
 }
-/* line 154, sass/misc.scss */
+/* line 173, sass/misc.scss */
 .row .column .image-container > img {
   width: 50vh;
   margin: 0 auto;
 }
-/* line 159, sass/misc.scss */
+/* line 178, sass/misc.scss */
 .row:nth-child(2n+1) {
   background-color: #fdf479;
   background-position: top;
   z-index: 4;
   transform: translateZ(0);
 }
-/* line 165, sass/misc.scss */
+/* line 184, sass/misc.scss */
 .row:nth-child(2n) {
   background-color: #fdf479;
   background-position: 50% 10px;
@@ -350,7 +371,7 @@ Contact Us Styles
 /* line 103, sass/module.scss */
 #contact_us .addresses div.email-container {
   background: url("images/images/social-address.png") 10% top no-repeat;
-  background-size: 5.5%;
+  background-size: 4.5%;
 }
 /* line 106, sass/module.scss */
 #contact_us .addresses div.email-container a {

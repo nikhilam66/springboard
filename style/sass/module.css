@@ -1,0 +1,111 @@
+/**************************************************
+Home Styles
+***************************************************/
+/* line 5, E:/my projects/springboard/style/sass/module.scss */
+#home .text-container {
+  margin: 3% 10%; }
+
+/**************************************************
+Pumping Prototype Styles
+***************************************************/
+/* line 15, E:/my projects/springboard/style/sass/module.scss */
+#pumping_prototype .column div {
+  width: 45%; }
+/* line 18, E:/my projects/springboard/style/sass/module.scss */
+#pumping_prototype .column .image-container {
+  padding-right: 4%;
+  float: left; }
+  /* line 21, E:/my projects/springboard/style/sass/module.scss */
+  #pumping_prototype .column .image-container img {
+    width: 80%; }
+/* line 25, E:/my projects/springboard/style/sass/module.scss */
+#pumping_prototype .column .text-container {
+  padding-top: 4%;
+  padding-left: 4%;
+  float: right; }
+
+/**************************************************
+Believed Styles
+***************************************************/
+/* line 37, E:/my projects/springboard/style/sass/module.scss */
+#believed .logos-row li {
+  width: 10%;
+  margin-left: 7%; }
+  /* line 40, E:/my projects/springboard/style/sass/module.scss */
+  #believed .logos-row li img {
+    width: 100%; }
+
+/**************************************************
+Team Styles
+***************************************************/
+/* line 50, E:/my projects/springboard/style/sass/module.scss */
+#team .team-row {
+  margin-top: 9%; }
+  /* line 52, E:/my projects/springboard/style/sass/module.scss */
+  #team .team-row li {
+    width: 10%;
+    margin-left: 10%; }
+    /* line 55, E:/my projects/springboard/style/sass/module.scss */
+    #team .team-row li:first-child {
+      margin-left: 0; }
+      /* line 57, E:/my projects/springboard/style/sass/module.scss */
+      #team .team-row li:first-child .twit-handle {
+        opacity: 0; }
+    /* line 61, E:/my projects/springboard/style/sass/module.scss */
+    #team .team-row li div {
+      width: 100%; }
+      /* line 63, E:/my projects/springboard/style/sass/module.scss */
+      #team .team-row li div img, #team .team-row li div p {
+        width: 100%; }
+      /* line 66, E:/my projects/springboard/style/sass/module.scss */
+      #team .team-row li div p {
+        margin: 0;
+        padding: 0; }
+      /* line 70, E:/my projects/springboard/style/sass/module.scss */
+      #team .team-row li div .twit-handle {
+        font-size: 0.75em; }
+
+/**************************************************
+Contact Us Styles
+***************************************************/
+/* line 82, E:/my projects/springboard/style/sass/module.scss */
+#contact_us .social-container {
+  margin-top: 5%; }
+  /* line 84, E:/my projects/springboard/style/sass/module.scss */
+  #contact_us .social-container a {
+    display: inline-block;
+    width: 10%;
+    margin-left: 2%; }
+    /* line 88, E:/my projects/springboard/style/sass/module.scss */
+    #contact_us .social-container a:first-child {
+      margin-left: 0; }
+    /* line 92, E:/my projects/springboard/style/sass/module.scss */
+    #contact_us .social-container a img {
+      width: 100%; }
+/* line 98, E:/my projects/springboard/style/sass/module.scss */
+#contact_us .addresses {
+  margin-top: 5%; }
+  /* line 100, E:/my projects/springboard/style/sass/module.scss */
+  #contact_us .addresses div {
+    width: 60%;
+    margin: 0 auto; }
+    /* line 103, E:/my projects/springboard/style/sass/module.scss */
+    #contact_us .addresses div.email-container {
+      background: url('images/images/social-address.png') 10% top no-repeat;
+      background-size: 4.5%; }
+      /* line 106, E:/my projects/springboard/style/sass/module.scss */
+      #contact_us .addresses div.email-container a {
+        color: #333; }
+        /* line 108, E:/my projects/springboard/style/sass/module.scss */
+        #contact_us .addresses div.email-container a:hover {
+          color: #333; }
+    /* line 113, E:/my projects/springboard/style/sass/module.scss */
+    #contact_us .addresses div.office-address-container {
+      margin-top: 2%;
+      background: url('images/images/social-map.png') 10% top no-repeat;
+      background-size: 4%; }
+      /* line 117, E:/my projects/springboard/style/sass/module.scss */
+      #contact_us .addresses div.office-address-container p {
+        margin: 0; }
+
+/*# sourceMappingURL=module.css.map */
