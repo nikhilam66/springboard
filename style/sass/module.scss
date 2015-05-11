@@ -52,12 +52,6 @@ Team Styles
 		li {
 			width: 10%;
 			margin-left: 10%;
-			&:first-child {
-				margin-left: 0;
-				.twit-handle {
-					opacity: 0;
-				}
-			}
 			div {
 				width: 100%;
 				img, p {
