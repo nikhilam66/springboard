@@ -199,7 +199,7 @@ Parallex Styles
 ***************************************************/
 /* line 135, sass/misc.scss */
 .main {
-  height: 110vh;
+  height: 100vh;
   width: 100vw;
   -webkit-perspective: 1px;
   -moz-perspective: 1px;
@@ -251,15 +251,15 @@ Parallex Styles
 .row:nth-child(2n+1) {
   background-color: #fdf479;
   background-position: 50% 0;
-  /*z-index: 4;
-  transform: translateZ(0);*/
+  z-index: 4;
+  transform: translateZ(0);
 }
 /* line 187, sass/misc.scss */
 .row:nth-child(2n) {
   background-color: #fcee2e;
   background-position: 50% 0;
-  /*z-index: 2;
-  transform: translateZ(-1px) scale(2);*/
+  z-index: 2;
+  transform: translateZ(-1px) scale(2);
 }
 
 /**************************************************
