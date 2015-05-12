@@ -256,7 +256,7 @@ Parallex Styles
 }
 /* line 187, sass/misc.scss */
 .row:nth-child(2n) {
-  background-color: #fdf479;
+  background-color: #fcee2e;
   background-position: 50% 0;
   z-index: 2;
   transform: translateZ(-1px) scale(2);
