@@ -73,32 +73,32 @@ Contact Us Styles
     /* line 82, E:/my projects/springboard/style/sass/module.scss */
     #contact_us .social-container a:first-child {
       margin-left: 0; }
-    /* line 86, E:/my projects/springboard/style/sass/module.scss */
+    /* line 85, E:/my projects/springboard/style/sass/module.scss */
     #contact_us .social-container a img {
       width: 100%; }
-/* line 92, E:/my projects/springboard/style/sass/module.scss */
+/* line 91, E:/my projects/springboard/style/sass/module.scss */
 #contact_us .addresses {
   margin-top: 5%; }
-  /* line 94, E:/my projects/springboard/style/sass/module.scss */
+  /* line 93, E:/my projects/springboard/style/sass/module.scss */
   #contact_us .addresses div {
     width: 60%;
     margin: 0 auto; }
-    /* line 97, E:/my projects/springboard/style/sass/module.scss */
+    /* line 96, E:/my projects/springboard/style/sass/module.scss */
     #contact_us .addresses div.email-container {
       background: url('images/images/social-address.png') 10% top no-repeat;
       background-size: 4.5%; }
-      /* line 100, E:/my projects/springboard/style/sass/module.scss */
+      /* line 99, E:/my projects/springboard/style/sass/module.scss */
       #contact_us .addresses div.email-container a {
         color: #333; }
-        /* line 102, E:/my projects/springboard/style/sass/module.scss */
+        /* line 101, E:/my projects/springboard/style/sass/module.scss */
         #contact_us .addresses div.email-container a:hover {
           color: #333; }
-    /* line 107, E:/my projects/springboard/style/sass/module.scss */
+    /* line 106, E:/my projects/springboard/style/sass/module.scss */
     #contact_us .addresses div.office-address-container {
       margin-top: 2%;
       background: url('images/images/social-map.png') 10% top no-repeat;
       background-size: 4%; }
-      /* line 111, E:/my projects/springboard/style/sass/module.scss */
+      /* line 110, E:/my projects/springboard/style/sass/module.scss */
       #contact_us .addresses div.office-address-container p {
         margin: 0; }
 

@@ -25,6 +25,9 @@ footer {
 	}
 }
 
+/**************************************************
+Left Menu Styles
+***************************************************/
 .menu-container {
 	height: 32px;
 	width: 32px;
@@ -97,6 +100,9 @@ footer {
 	}
 }
 
+/**************************************************
+Right Logo Styles
+***************************************************/
 .clarice-logo {
 	height: 40px;
 	width: 245px;
@@ -107,6 +113,7 @@ footer {
     background: url('images/images/clarice-logo.png') no-repeat;
     background-size: contain;
 }
+
 /**************************************************
 Misc Styles
 ***************************************************/
@@ -114,12 +121,10 @@ Misc Styles
 ul {
 	list-style: none;
 	margin: 0 5%;
-
 	li {
 		display: inline-block;
 	}
 }
-
 a {
 	text-decoration: none;
 }
@@ -127,7 +132,6 @@ a {
 /**************************************************
 Parallex Styles
 ***************************************************/
-
 .main {
 	height: 100vh;
 	width: 100vw;
@@ -138,13 +142,12 @@ Parallex Styles
 	overflow-x: hidden;
 	overflow-y: auto;
 }
-
 .row {
 	background: url('images/backgrounds/logo.png') no-repeat;
-	background-size: 15%;
+	background-size: 20%;
 	position: relative;
-	height: 95vh;
-	padding: 0 0 5vh 0;
+	height: 100vh;
+	padding: 0;
 	-webkit-transform-style :preserve-3d;
 	-moz-transform-style :preserve-3d;
 	-ms-transform-style :preserve-3d;
@@ -157,11 +160,11 @@ Parallex Styles
 	-moz-perspective-origin-x: 100%;
 	-ms-perspective-origin-x: 100%;
 	perspective-origin-x: 100%;
-
+    
 	.column{
-		height: 75vh;
+		height: 65vh;
 		position: absolute;
-		top: 25vh;
+		margin-top: 35vh;
 		bottom: 0;
 		left:0;
 		right:0;
@@ -177,13 +180,13 @@ Parallex Styles
 	}
 	&:nth-child(2n+1) {
 		background-color: #fdf479;
-		background-position: top;
+		background-position: 50% 0;
 		z-index: 4;
 		transform: translateZ(0);
 	}
 	&:nth-child(2n) {
 		background-color: #fdf479;
-		background-position: 50% 10px;
+		background-position: 50% 0;
 		z-index: 2;
 		transform: translateZ(-1px) scale(2);
 	}

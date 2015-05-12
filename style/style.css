@@ -76,7 +76,10 @@ footer:hover {
   background-size: contain;
 }
 
-/* line 28, sass/misc.scss */
+/**************************************************
+Left Menu Styles
+***************************************************/
+/* line 31, sass/misc.scss */
 .menu-container {
   height: 32px;
   width: 32px;
@@ -86,23 +89,23 @@ footer:hover {
   left: 10px;
   cursor: pointer;
 }
-/* line 36, sass/misc.scss */
+/* line 39, sass/misc.scss */
 .menu-container.close {
   background: url("images/images/menu-open.png") no-repeat;
   background-size: contain;
 }
-/* line 39, sass/misc.scss */
+/* line 42, sass/misc.scss */
 .menu-container.close .menu {
   opacity: 0;
   height: 0;
   overflow: hidden;
 }
-/* line 45, sass/misc.scss */
+/* line 48, sass/misc.scss */
 .menu-container.open {
   background: url("images/images/menu-close.png") no-repeat;
   background-size: contain;
 }
-/* line 48, sass/misc.scss */
+/* line 51, sass/misc.scss */
 .menu-container.open .menu {
   -webkit-transition: opacity 0.5s ease;
   -moz-transition: opacity 0.5s ease;
@@ -110,7 +113,7 @@ footer:hover {
   opacity: 1;
   height: 450px;
 }
-/* line 57, sass/misc.scss */
+/* line 60, sass/misc.scss */
 .menu-container .menu {
   position: absolute;
   top: 0;
@@ -121,7 +124,7 @@ footer:hover {
   width: 335px;
   font-size: 0.9em;
 }
-/* line 66, sass/misc.scss */
+/* line 69, sass/misc.scss */
 .menu-container .menu li {
   display: block;
   width: 80%;
@@ -141,24 +144,27 @@ footer:hover {
   border-width: 0 0 20px 0;
   border-style: solid;
 }
-/* line 84, sass/misc.scss */
+/* line 87, sass/misc.scss */
 .menu-container .menu li:first-child {
   margin-top: 35px;
 }
-/* line 87, sass/misc.scss */
+/* line 90, sass/misc.scss */
 .menu-container .menu li:last-child {
   border: none;
 }
-/* line 90, sass/misc.scss */
+/* line 93, sass/misc.scss */
 .menu-container .menu li a {
   color: #333;
 }
-/* line 93, sass/misc.scss */
+/* line 96, sass/misc.scss */
 .menu-container .menu li a:hover {
   color: #f15a24;
 }
 
-/* line 100, sass/misc.scss */
+/**************************************************
+Right Logo Styles
+***************************************************/
+/* line 106, sass/misc.scss */
 .clarice-logo {
   height: 40px;
   width: 245px;
@@ -173,17 +179,17 @@ footer:hover {
 /**************************************************
 Misc Styles
 ***************************************************/
-/* line 114, sass/misc.scss */
+/* line 121, sass/misc.scss */
 ul {
   list-style: none;
   margin: 0 5%;
 }
-/* line 118, sass/misc.scss */
+/* line 124, sass/misc.scss */
 ul li {
   display: inline-block;
 }
 
-/* line 123, sass/misc.scss */
+/* line 128, sass/misc.scss */
 a {
   text-decoration: none;
 }
@@ -191,7 +197,7 @@ a {
 /**************************************************
 Parallex Styles
 ***************************************************/
-/* line 131, sass/misc.scss */
+/* line 135, sass/misc.scss */
 .main {
   height: 100vh;
   width: 100vw;
@@ -203,13 +209,13 @@ Parallex Styles
   overflow-y: auto;
 }
 
-/* line 142, sass/misc.scss */
+/* line 145, sass/misc.scss */
 .row {
   background: url("images/backgrounds/logo.png") no-repeat;
-  background-size: 15%;
+  background-size: 20%;
   position: relative;
-  height: 95vh;
-  padding: 0 0 5vh 0;
+  height: 100vh;
+  padding: 0;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
@@ -223,11 +229,11 @@ Parallex Styles
   -ms-perspective-origin-x: 100%;
   perspective-origin-x: 100%;
 }
-/* line 161, sass/misc.scss */
+/* line 164, sass/misc.scss */
 .row .column {
-  height: 75vh;
+  height: 65vh;
   position: absolute;
-  top: 25vh;
+  margin-top: 35vh;
   bottom: 0;
   left: 0;
   right: 0;
@@ -236,22 +242,22 @@ Parallex Styles
   -ms-perspective-origin-x: 100%;
   perspective-origin-x: 100%;
 }
-/* line 173, sass/misc.scss */
+/* line 176, sass/misc.scss */
 .row .column .image-container > img {
   width: 50vh;
   margin: 0 auto;
 }
-/* line 178, sass/misc.scss */
+/* line 181, sass/misc.scss */
 .row:nth-child(2n+1) {
   background-color: #fdf479;
-  background-position: top;
+  background-position: 50% 0;
   z-index: 4;
   transform: translateZ(0);
 }
-/* line 184, sass/misc.scss */
+/* line 187, sass/misc.scss */
 .row:nth-child(2n) {
   background-color: #fdf479;
-  background-position: 50% 10px;
+  background-position: 50% 0;
   z-index: 2;
   transform: translateZ(-1px) scale(2);
 }
@@ -347,39 +353,39 @@ Contact Us Styles
 #contact_us .social-container a:first-child {
   margin-left: 0;
 }
-/* line 86, sass/module.scss */
+/* line 85, sass/module.scss */
 #contact_us .social-container a img {
   width: 100%;
 }
-/* line 92, sass/module.scss */
+/* line 91, sass/module.scss */
 #contact_us .addresses {
   margin-top: 5%;
 }
-/* line 94, sass/module.scss */
+/* line 93, sass/module.scss */
 #contact_us .addresses div {
   width: 60%;
   margin: 0 auto;
 }
-/* line 97, sass/module.scss */
+/* line 96, sass/module.scss */
 #contact_us .addresses div.email-container {
   background: url("images/images/social-address.png") 10% top no-repeat;
   background-size: 4.5%;
 }
-/* line 100, sass/module.scss */
+/* line 99, sass/module.scss */
 #contact_us .addresses div.email-container a {
   color: #333;
 }
-/* line 102, sass/module.scss */
+/* line 101, sass/module.scss */
 #contact_us .addresses div.email-container a:hover {
   color: #333;
 }
-/* line 107, sass/module.scss */
+/* line 106, sass/module.scss */
 #contact_us .addresses div.office-address-container {
   margin-top: 2%;
   background: url("images/images/social-map.png") 10% top no-repeat;
   background-size: 4%;
 }
-/* line 111, sass/module.scss */
+/* line 110, sass/module.scss */
 #contact_us .addresses div.office-address-container p {
   margin: 0;
 }
