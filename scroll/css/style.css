@@ -169,9 +169,15 @@ Right Logo Styles
 
 /* Header Styles
 ---------------------------------*/
+#owl-demo .item img, #owl-demo1 .item img{
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
 .header{
     text-align:center;
     background-color: #fdf479;
+    height: 100vh;
 }
 .logo{
     width:320px;
@@ -183,15 +189,15 @@ Right Logo Styles
     color: #f15a24;
 }
 h2 {
-    font-size: 1.9em;
+    font-size: 1.6em;
 }
 .link{
     background: url("../img/images/button-inactive.png") 50% 50% no-repeat;
     background-size: contain;
     font-family: 'Hanzipen Bold', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 1.1em;
-    line-height: 75px;
-    height: 90px;
+    line-height: 40px;
+    min-height: 45px;
     word-wrap: break-word;
     text-align: center;
     transition:all 0.3s ease-in-out;
@@ -201,14 +207,16 @@ h2 {
     display: block;
     text-decoration: none;
     padding: 10px 0 0 0;
-    position: relative;
+    position: absolute;
     bottom: 0;
+    left: 0;
 }
 .link span {
     display: block;
     width: 100%;
     color: #ffee71;
-    position: absolute;
+    position: relative;
+    padding: 1% 0 0 0;
 }
 .link:focus {
     text-decoration: none;
@@ -222,6 +230,7 @@ ul.we-create {
     padding: 4% 0 16% 0;
 }
 .main-section{
+    height: 100vh;
 }
 .prototype {
     padding: 3% 0 2% 0;
@@ -229,10 +238,13 @@ ul.we-create {
 .prototype p {
     line-height: 1.8em;
 }
+.owl-carousel img {
+    width: 800px;
+}
 /* Beleived
 ---------------------------------*/
 #believed img {
-    width: 80%;
+    width: 66%;
 }
 #believed ul {
     padding: 2% 0;
@@ -244,8 +256,8 @@ ul.we-create {
 /* Team
 ---------------------------------*/
 .team-leader-block{
-    max-width:993px;
     margin:0 auto;
+    padding: 10vh 0 0;
 }
 .team-leader-box{
     height: 550px;
@@ -509,3 +521,5 @@ Contact Us Styles
     animation-delay: 5s; 
     -webkit-animation-delay: 5s; 
 }
+
+.page{position: relative}

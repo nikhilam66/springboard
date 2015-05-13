@@ -11,7 +11,7 @@
 	.form{ margin:0 0 0 20px}
 	.main-nav{ display:block !important; }
 	/*.portfolioContainer{ width:800px; margin:0px auto !important; } */ 
-	
+	.link{ height: 90px;}
 }	
    
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -38,8 +38,7 @@
 	.main-nav li a{ padding:8px 15px;}
 	/*.portfolioContainer{ width:750px; margin:0px auto !important; }
 	.Portfolio-box{ height:250px;}*/
-	
-	 
+.link{width:100%};
 	
 }
 
@@ -77,7 +76,7 @@
 	.business-talking a{ padding:10px 25px; font-size:14px;}
 	.main-section.contact{ padding:60px 0 70px}
 	.client-part-haead{ font-size:20px; line-height:30px;}
-	.link{ font-size:14px; padding:10px 25px;}
+	.link{ font-size:14px;}
 	.logo{ width:100px;}
 	.main-section.contact{ background-size:contain;}
 	.Portfolio-nav li a{ padding:5px 16px;}
@@ -87,8 +86,10 @@
 	.isotope{ width:400px; margin:0px auto;}
 	.Portfolio-box{}
 	.portfolioContainer{ width:350px; margin:0px auto !important; } */
-	
-	
+    #owl-demo .item img, #owl-demo1 .item img {
+        width: 100%;
+    }	
+	.link{width:100%};
 }
 
 @media only screen and (max-width: 479px) {
@@ -101,5 +102,8 @@
 	.Portfolio-box{  max-width:300px !important; width:96.4% !important; margin:0 !important}
 	.Portfolio-box img { max-width:100%;}
 	.portfolioContainer{ width:280px !important; margin:0 auto !important } 
-	
+	.link{width:100%};
+    #owl-demo .item img, #owl-demo1 .item img {
+        width: 100%;
+    }
 }
