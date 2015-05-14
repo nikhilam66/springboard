@@ -25,18 +25,18 @@
         <script type="text/javascript" src="js/owl.carousel.js"></script>
 
         <!--[if lt IE 9]>
-        <script src="js/respond-1.1.0.min.js"></script>
-        <script src="js/html5shiv.js"></script>
-        <script src="js/html5element.js"></script>
-        <![endif]-->
+<script src="js/respond-1.1.0.min.js"></script>
+<script src="js/html5shiv.js"></script>
+<script src="js/html5element.js"></script>
+<![endif]-->
 
     </head>
     <body>
-       <div class="logo_container">
-           <figure class="logo animated fadeInDown delay-07s">
-                    <a href="#"><img src="img/images/logo.png" alt="" style="max-height:150px"></a>	
-                </figure>
-       </div>
+        <div class="logo_container">
+            <figure class="logo animated fadeInDown delay-07s">
+                <a href="#"><img src="img/images/logo.png" alt="" style="max-height:150px"></a>	
+            </figure>
+        </div>
         <section class="menu-container close" id="test">
             <ul class="menu anchor">
                 <li><a href="#service">Are you ready?</a></li>
@@ -52,7 +52,7 @@
 
         <header class="header page" id="header"><!--header-start-->
             <div class="container anchor">
-                	
+
                 <h1 class="animated pulse delay-07s">Welcome, we are Springboard</h1>
                 <ul class="we-create animated fadeInUp delay-1s">
                     <li>We designed Springboard for you, to help you build the best product ideas of the future that have a clear purpose and a strong story for your customers. If you’d like to launch your product idea, we’d love to have you Springboard…</li>
@@ -85,20 +85,20 @@
                 </a>
             </div>
         </section><!--main-section-end-->
-        
+
 
         <section class="main-section page" id="takeoff"><!--main-section alabaster-start-->
             <div class="container anchor">
                 <div id="owl-demo1" class="owl-carousel owl-theme">
-                    <div class="item">
+                    <div class="item fadeIn">
                         <h2 class="wow bounceIn">Start by visioning your idea</h2>
                         <img src="img/images/proto-1.png" alt="Genie" class="wow bounceIn delay-03s">
                     </div>
-                    <div class="item">
+                    <div class="item fadeIn">
                         <h2 class="wow bounceIn">Drive your idea to progress</h2>
                         <img src="img/images/proto-2.png" alt="Drone" class="wow bounceIn delay-06s">
                     </div>
-                    <div class="item">
+                    <div class="item fadeIn">
                         <h2 class="wow bounceIn">Validate, learn and discover</h2>
                         <img src="img/images/proto-3.png" alt="Sleeping Bag" class="wow bounceIn delay-09s">
                     </div>
@@ -190,7 +190,7 @@
                                 <li><a href="#" class="fa-twitter"></a></li>
                             </ul>
                         </div>
-                        <h3 class="wow bounceIn delay-03s">Shashank Deshpande</h3>
+                        <h3 class="wow bounceIn delay-03s">Shashank</h3>
                         <span class="wow bounceIn delay-03s">@shashankd</span>
                     </div>
                     <div class="team-leader-box col-xs-6 col-sm-3">
@@ -253,7 +253,7 @@
                 </div>
             </div>
         </section>
-        
+
 
         <script>
             $(document).ready(function() {
@@ -263,7 +263,8 @@
                     slideSpeed : 300,
                     pagination : false,
                     paginationSpeed : 400,
-                    singleItem:true
+                    singleItem:true,
+                    transitionStyle : "fade"
                 });
 
                 $("#owl-demo1").owlCarousel({
@@ -287,16 +288,16 @@
         </script>
         <script>
             $(window).on('beforeunload', function() {
-    $(window).scrollTop(0);
-});
+                $(window).scrollTop(0);
+            });
             $(document).ready(function(){
                 $('.link').css('z-index',1);
                 $('.header .link').css('z-index',2);
-                 $('html, body').scrollTop(0);
+                $('html, body').scrollTop(0);
                 $('.anchor a').bind('click',function(event){
                     var $anchor = $(this);
                     var offset = $($anchor.attr('href')).offset().top;
-                    
+
                     $('.link').css('z-index',1);
                     $($anchor.attr('href')).find('.link').css('z-index',2);
                     if($($anchor.attr('href')).find('.link').length == 0){
