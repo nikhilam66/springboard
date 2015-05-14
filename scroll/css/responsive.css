@@ -12,6 +12,7 @@
 	.main-nav{ display:block !important; }
 	/*.portfolioContainer{ width:800px; margin:0px auto !important; } */ 
 	.link{ height: 90px;}
+    .menu-container .menu {font-size: 20px;}
 }	
    
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -106,4 +107,12 @@
     #owl-demo .item img, #owl-demo1 .item img {
         width: 100%;
     }
+    .menu-container .menu {
+        
+    }
+    .container{padding-top: 13vh}
+    #believed img{width: 58%}
+    .team-leader-block{padding-top: 0}
+    .team .container{padding-top: 4vh}
+    .clients .container{padding-top: 18vh}
 }
