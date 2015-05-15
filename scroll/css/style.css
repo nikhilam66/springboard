@@ -101,7 +101,7 @@ Left Menu Styles
     -moz-transition: opacity 0.5s ease;
     transition: opacity 0.5s ease;
     opacity: 1;
-    padding: 0 0 0 10px;
+    padding: 0 0 10px 10px;
 }
 /* line 60, sass/misc.scss */
 .menu-container .menu {
@@ -246,7 +246,7 @@ ul.we-create {
 /* Beleived
 ---------------------------------*/
 #believed img {
-    width: 66%;
+    width: 50%;
 }
 #believed ul {
     padding: 2% 0;
@@ -443,7 +443,7 @@ Contact Us Styles
 }
 /* line 85, sass/module.scss */
 #contact .social-container a img {
-    width: 80%;
+    width: 66%;
 }
 /* line 91, sass/module.scss */
 #contact .addresses {

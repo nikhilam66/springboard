@@ -13,6 +13,9 @@ Media Queries
     /*.portfolioContainer{ width:800px; margin:0px auto !important; } */ 
     .link{ height: 90px;}
     .menu-container .menu {font-size: 14px;}
+    .prototype img {
+        max-width: 80%;
+    }
 }	
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
