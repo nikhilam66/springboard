@@ -302,13 +302,28 @@
         </script>
         <script>
             var menu = document.querySelector(".menu-container");
-            menu.addEventListener('click', function(e){
-                if(e.currentTarget.classList.contains('close')){
-                    e.currentTarget.classList.remove('close');
-                    e.currentTarget.classList.add('open');
+            var menuToggle = function(ele, toggleType){
+                if(toggleType === 'open'){
+                    ele.classList.remove('close');
+                    ele.classList.add('open');
                 } else {
-                    e.currentTarget.classList.remove('open');
-                    e.currentTarget.classList.add('close');
+                    ele.classList.remove('open');
+                    ele.classList.add('close');
+                }
+            }
+            menu.addEventListener('click', function(e){
+                e.stopPropagation();
+                if(e.currentTarget.classList.contains('close')){
+                    menuToggle(e.currentTarget, 'open');
+                } else {
+                    menuToggle(e.currentTarget, 'close');
+                }
+            });
+
+            document.body.addEventListener('click', function(e){
+                var menu = document.querySelector('.menu-container');
+                if(menu.classList.contains('open')){
+                    menuToggle(menu, 'close');
                 }
             });
         </script>
